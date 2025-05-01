@@ -1,5 +1,5 @@
 ---
-title: "vg-sales-analyzer"
+title: "vgSalesAnalyzer"
 output: html_document
 date: "2025-05-01"
 ---
@@ -120,12 +120,12 @@ install.packages("devtools")
 
 #Install vg-sales-analyzer from Github
 ```{r}
-devtools::install_github("AlenjaksAbraham/vg-sales-analyzer")
+devtools::install_github("AlenjaksAbraham/vgSalesAnalyzer")
 ```
 
 #Load Package
 ```{r}
-library(vg-sales-analyzer)
+library(vgSalesAnalyzer)
 ```
 
 

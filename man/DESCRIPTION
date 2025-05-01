@@ -1,4 +1,4 @@
-Package: vg-sales-analyzer
+Package: vgSalesAnalyzer
 Type: Package
 Title: video Game Sales Analyzer 
 Version: 0.1.0

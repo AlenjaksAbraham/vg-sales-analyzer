@@ -1,9 +1,8 @@
-VG-SALES-ANALYZER
-
+vgSalesAnalyzer
 
 
 📦 Package Summary
-VG-Sales-Analyzer is an R pacakge that provides tools for exploring and analyzing video game sales data, with a focus on simplicity, clarity, and regional insights. It includes functions for summarizing top-selling games, visualizing sales trends over time, and working with both S3 and S4 representations of individual video game records. 
+vgSalesAnalyzer is an R pacakge that provides tools for exploring and analyzing video game sales data, with a focus on simplicity, clarity, and regional insights. It includes functions for summarizing top-selling games, visualizing sales trends over time, and working with both S3 and S4 representations of individual video game records. 
 
 
 
@@ -40,16 +39,15 @@ What it does:
 Creates a new S4 object of class "VideoGame" using the provided values for the game's name, platform, and global sales.
 
 
-How to Install Package?
 🔧  How to Install the Package
 
 #Install devtools
 
 install.packages("devtools")
 
-devtools::install_github("AlenjaksAbraham/vg-sales-analyzer")
+devtools::install_github("AlenjaksAbraham/vgSalesAnalyzer")
 
-library(vg-sales-analyzer)
+library(vgSalesAnalyzer)
 
 
 
