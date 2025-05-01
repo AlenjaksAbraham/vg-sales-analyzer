@@ -41,6 +41,7 @@ Creates a new S4 object of class "VideoGame" using the provided values for the g
 
 
 How to Install Package?
+🔧  How to Install the Package
 
 #Install devtools
 
