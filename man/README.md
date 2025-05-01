@@ -31,7 +31,7 @@ A table of the top games with columns like name, platform, year, genre, publishe
 
 **as.videogame.object:**
 What it does:
-Constructs a formal S4 object of class "VideoGame", with slots for name, platform, and sales.
+Constructs a formal S3 object of class "VideoGame", with slots for name, platform, and sales.
 
 
 **build.videogame.class:**
