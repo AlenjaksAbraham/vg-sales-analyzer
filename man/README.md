@@ -40,7 +40,7 @@ What it does:
 Creates a new S4 object of class "VideoGame" using the provided values for the game's name, platform, and global sales.
 
 
-How to Install Package?
+🔧  How to Install the Package
 
 #Install devtools
 
