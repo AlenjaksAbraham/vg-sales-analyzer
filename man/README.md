@@ -8,6 +8,9 @@ VG-Sales-Analyzer is an R pacakge that provides tools for exploring and analyzin
 
 
 
+
+
+
 📄 Function Overview
 
 
@@ -37,8 +40,15 @@ What it does:
 Creates a new S4 object of class "VideoGame" using the provided values for the game's name, platform, and global sales.
 
 
+How to Install Package?
 
+#Install devtools
 
+install.packages("devtools")
+
+devtools::install_github("AlenjaksAbraham/vg-sales-analyzer")
+
+library(vg-sales-analyzer)
 
 
 
