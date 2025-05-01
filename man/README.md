@@ -31,7 +31,7 @@ A table of the top games with columns like name, platform, year, genre, publishe
 
 **as.videogame.object:**
 What it does:
-Constructs a formal S3 object of class "VideoGame", which produces a single-row data frame representing one video gam
+Constructs a formal S3 object of class "VideoGame", which produces a single-row data frame representing one video game.
 
 
 **build.videogame.class:**
