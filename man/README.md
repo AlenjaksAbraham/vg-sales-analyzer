@@ -23,7 +23,7 @@ A printed data frame of yearly sales and a line plot (using ggplot2) showing tre
 
 **top.selling.games:**
 What it does:
-Sorts and returns the top n best-selling video games in a given region.
+Sorts and returns the top best-selling video games in a given region.
 
 Output:
 A table of the top games with columns like name, platform, year, genre, publisher, and sales.
