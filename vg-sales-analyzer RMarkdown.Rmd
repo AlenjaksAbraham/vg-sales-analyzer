@@ -1,0 +1,133 @@
+---
+title: "vg-sales-analyzer"
+output: html_document
+date: "2025-05-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+
+Import and Load Dataset
+
+```{r}
+VideoGames <- read.csv("C:/Users/alenm/OneDrive/Documents/LIS4370/vgsales.csv")
+
+##link for dataset can be found using this link:
+#https://www.kaggle.com/datasets/anandshaw2001/video-game-sales
+
+```
+
+Inspect and Clean Data
+
+```{r}
+str(VideoGames)
+summary(VideoGames)
+head(VideoGames)
+tail(VideoGames)
+anyNA(VideoGames)
+
+
+#Data is not needed to be cleaned. No missing values found in dataset. 
+
+```
+
+
+##Function: "sales.over.time"
+
+#Purpose:
+#Aggregates video game sales by year for a selected region ("Global", "NA", "EU", "JP", or "Other").
+
+#Output:Printed dataframe of yearly sales with a line plot demonstrating trends over time. 
+```{r}
+
+#Example Input
+
+sales.over.time(VideoGames, "JP")
+
+```
+
+
+
+
+##Function: "top.selling.games"
+
+#Purpose:
+#Sorts and returns the top n best-selling video games in a given region.
+
+#Output: Table of top games including name, platform, year, genre, publisher, and sales.
+```{r}
+
+#Example Input
+
+top.selling.games(VideoGames, n = 5, region = "EU")
+
+```
+
+
+##Function: "as.videogame.object"
+
+#Purpose:
+#To convert an existing one-row data frame into an S4 object of class
+
+#Output: Constructs a formal S4 object of class "VideoGame", with slots for name, platform, and sales.
+```{r}
+
+#Example Input
+
+game1 <- videogame(VideoGames[1, ])
+class(game1)
+
+
+print(game1)
+
+```
+
+
+
+
+##Function: "build.videogame.class"
+
+#Purpose:
+#To manually create a new VideoGame S4 object by providing the individual slot values directly — name, platform, and sales.
+
+#Output: Creates a new S4 object of class "VideoGame" using the provided values for the game's name, platform, and global sales.
+```{r}
+
+#Example Input
+
+
+# Create an object
+duck_hunt <- new("VideoGame", name = "Duck Hunt", platform = "NES", sales = 28.31)
+
+
+getPlatform(duck_hunt)
+
+```
+
+
+
+##How to install vg-sales-analyzer?
+
+#Install devtools
+```{r}
+install.packages("devtools")
+```
+
+#Install vg-sales-analyzer from Github
+```{r}
+devtools::install_github("AlenjaksAbraham/vg-sales-analyzer")
+```
+
+#Load Package
+```{r}
+library(vg-sales-analyzer)
+```
+
+
+
+
